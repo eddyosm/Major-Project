@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Captioning</title>
+  </head>
+  <body>
+    <h1>Upload an image to generate a caption</h1>
+    <form action="{{ url_for('upload_image') }}" method="POST" enctype="multipart/form-data">
+      <input type="file" name="image" accept="image/*" required>
+      <button type="submit">Upload</button>
+    </form>
+  </body>
+</html>
